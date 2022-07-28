@@ -15,11 +15,13 @@ const Clubs = () => {
   const displayClubs = async () => {
     await axios.get("http://localhost:8000/api/clubs").then((res) => {
       setClubs(res.data.data);
+      console.log(res.data);
     });
   };
 
   const deleteClub = (id) => {
     axios.delete(`http://localhost:8000/api/clubs/${id}`).then(displayClubs);
+    console.log('testy');
   };
 
   return (
@@ -49,6 +51,7 @@ const Clubs = () => {
                   >
                     Supprimer
                   </Button>
+
                 </td>
               </tr>
             ))}
