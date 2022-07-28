@@ -147,7 +147,7 @@ const getClubs = async () => {
                     </Row>
                     <Row>
                       <Col>
-                      <Form.Group controlId="position">
+                      <Form.Group controlId="club">
                       <Form.Label>Club</Form.Label>
                         <Form.Select aria-label="Default select example" onChange={handleChange}>
                           <option>Choisissez un club</option>
@@ -165,7 +165,7 @@ const getClubs = async () => {
                     </Row>
                     <Row>
                       <Col>
-                        <Form.Group controlId="PhotoPlayer" className="mb-3">
+                        <Form.Group controlId="photoPlayer" className="mb-3">
                           <Form.Label>Photo du joueur</Form.Label>
                           <Form.Control type="file" onChange={changeHandler} />
                         </Form.Group>
